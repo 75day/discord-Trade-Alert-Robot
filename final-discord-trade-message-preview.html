@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Discord-Style Trade Message Preview</title>
+    <style>
+        body {
+            background-color: #36393f;
+            color: #dcddde;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .message {
+            background-color: #2f3136;
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 16px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .account {
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .type {
+            color: #ffffff;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .symbol {
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        .value {
+            font-weight: bold;
+        }
+        .disclaimer {
+            margin-top: 8px;
+            font-size: 11px;
+            color: #b9bbbe;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="message" style="border-left: 4px solid #4ade80;">
+        <div class="header">
+            <span class="account">[IBKR Main Account]</span>
+            <span class="type" style="background-color: #4ade80;">BTO</span>
+        </div>
+        <div class="symbol">AAPL 150C 09/17 @ 2.97</div>
+        <div class="detail">
+            <span>Quantity:</span>
+            <span class="value">10</span>
+        </div>
+        <div class="detail">
+            <span>Market Price:</span>
+            <span class="value">3.0</span>
+        </div>
+        <div class="detail">
+            <span>Trade Value:</span>
+            <span class="value" style="color: #ffffff;">$2,970.00</span>
+        </div>
+        <div class="disclaimer">
+            ⚠️ This is not financial advice. Market volatility is high, please exercise caution.
+        </div>
+    </div>
+
+    <div class="message" style="border-left: 4px solid #fbbf24;">
+        <div class="header">
+            <span class="account">[IBKR Main Account]</span>
+            <span class="type" style="background-color: #fbbf24;">BTO (Add)</span>
+        </div>
+        <div class="symbol">AAPL 150C 09/17 @ 3.15</div>
+        <div class="detail">
+            <span>Added Quantity:</span>
+            <span class="value">5</span>
+        </div>
+        <div class="detail">
+            <span>New Total Quantity:</span>
+            <span class="value">15</span>
+        </div>
+        <div class="detail">
+            <span>Average Cost:</span>
+            <span class="value">$3.03</span>
+        </div>
+        <div class="detail">
+            <span>Total Investment:</span>
+            <span class="value" style="color: #ffffff;">$4,545.00</span>
+        </div>
+        <div class="disclaimer">
+            ⚠️ This is not financial advice. Market volatility is high, please exercise caution.
+        </div>
+    </div>
+
+    <div class="message" style="border-left: 4px solid #ef4444;">
+        <div class="header">
+            <span class="account">[IBKR Main Account]</span>
+            <span class="type" style="background-color: #ef4444;">STC (Partial)</span>
+        </div>
+        <div class="symbol">AAPL 150C 09/17 @ 4.5 from 3.03 (49%)</div>
+        <div class="detail">
+            <span>Quantity Sold:</span>
+            <span class="value">7</span>
+        </div>
+        <div class="detail">
+            <span>Remaining Quantity:</span>
+            <span class="value">8</span>
+        </div>
+        <div class="detail">
+            <span>Market Price:</span>
+            <span class="value">4.5</span>
+        </div>
+        <div class="detail">
+            <span>P&L (Sold Portion):</span>
+            <span class="value" style="color: #4ade80;">49% $1,029.00</span>
+        </div>
+        <div class="detail">
+            <span>Unrealized P&L (Remaining):</span>
+            <span class="value" style="color: #4ade80;">49% $1,176.00</span>
+        </div>
+        <div class="disclaimer">
+            ⚠️ This is not financial advice. Market volatility is high, please exercise caution.
+        </div>
+    </div>
+
+    <div class="message" style="border-left: 4px solid #ef4444;">
+        <div class="header">
+            <span class="account">[IBKR Main Account]</span>
+            <span class="type" style="background-color: #ef4444;">STC</span>
+        </div>
+        <div class="symbol">AAPL 150C 09/17 @ 5.0 from 3.03 (65%)</div>
+        <div class="detail">
+            <span>Quantity Sold:</span>
+            <span class="value">8</span>
+        </div>
+        <div class="detail">
+            <span>Market Price:</span>
+            <span class="value">5.0</span>
+        </div>
+        <div class="detail">
+            <span>P&L:</span>
+            <span class="value" style="color: #4ade80;">65% $1,576.00</span>
+        </div>
+        <div class="detail">
+            <span>Total Realized P&L:</span>
+            <span class="value" style="color: #4ade80;">$2,605.00</span>
+        </div>
+        <div class="disclaimer">
+            ⚠️ This is not financial advice. Market volatility is high, please exercise caution.
+        </div>
+    </div>
+</body>
+</html>
